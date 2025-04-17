@@ -1,0 +1,200 @@
+.form-control {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  height: 53px;
+  border: 1px solid #eaeeee;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 19px;
+  color: #70737d;
+  padding: 0 12px;
+
+  &:focus {
+    border-color: #05195e;
+    background-color: #fbfcfd;
+    color: #333333;
+  }
+}
+
+textarea.form-control {
+  height: 96px;
+  resize: none;
+  padding-top: 16px;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 19px;
+  color: #15192a;
+  margin-bottom: 8px;
+}
+
+.nice-select {
+  float: none;
+
+  &::after {
+    right: auto;
+    left: 23px;
+    font-size: 6px;
+    border-color: #d1d1d1;
+  }
+
+  .current {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nice-select-dropdown {
+    width: 100%;
+
+    ul {
+      li {
+        text-align: right;
+
+        &.selected.focus {
+          color: #fff;
+          background-color: #d10101;
+        }
+
+        &:hover {
+          background-color: rgba(#d10101, 0.1);
+        }
+      }
+
+      &:hover li:not(:hover) {
+        color: #333 !important;
+      }
+    }
+  }
+}
+
+.switch {
+  &-label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #70737d;
+    border-radius: 8px;
+    border: 1px solid #f5f5f5;
+    padding: 13px 19px;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 19px;
+      transform: translateY(-50%);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &::before {
+      width: 43px;
+      height: 21px;
+      border-radius: 11px;
+      background-color: #333;
+    }
+
+    &::after {
+      left: 42px;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &-input:checked + label {
+    &::before {
+      background-color: #fe0000;
+    }
+
+    &::after {
+      left: 24px;
+    }
+  }
+}
+
+.checkbox {
+  &-label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #70737d;
+    position: relative;
+    padding-right: 28px;
+    display: inline-block;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      border-radius: 4px;
+      transform: translateY(-50%);
+    }
+
+    &::before {
+      content: '';
+      border: 1px solid #70737d;
+      width: 18px;
+      height: 18px;
+    }
+
+    &::after {
+      content: "\e910";
+      background-color: #16B976;
+      color: #fff;
+      font-family: 'icomoon';
+      @include flex(center, center);
+      font-size: 7px;
+      width: 20px;
+      height: 20px;
+      transition: all .3s  ease-in-out;
+      opacity: 0;
+    }
+
+    a {
+      color: #05195e;
+      text-decoration: underline;
+
+      &:hover {
+        color: #fe0000;
+      }
+    }
+  }
+
+  &-input:checked + label::after {
+    opacity: 1;
+  }
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td.selected span,
+.datepicker-plot-area .datepicker-year-view .year-item.selected,
+.datepicker-plot-area .datepicker-month-view .month-item.selected {
+  background-color: #fe0000;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td.today span {
+  background-color: rgba(#fe0000, 0.7);
+}
+
+.datepicker-plot-area
+  .datepicker-day-view
+  .table-days
+  td.selected
+  span
+  .datepicker-plot-area
+  .datepicker-day-view
+  .table-days
+  td:hover,
+.datepicker-plot-area .datepicker-day-view .table-days td span:hover,
+.datepicker-plot-area .datepicker-year-view .year-item:hover,
+.datepicker-plot-area .datepicker-month-view .month-item:hover {
+  background-color: rgba(#fe0000, 0.5);
+}

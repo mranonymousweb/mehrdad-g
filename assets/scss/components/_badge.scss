@@ -1,0 +1,32 @@
+.badge {
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  padding: 0 8px;
+  line-height: 28px;
+
+  &-success {
+    background-color: #C9F7F5;
+    color: #1BC6BF;
+  }
+
+  &-warning {
+    background-color: #FFF4DE;
+    color: #F8B326;
+  }
+
+  &-danger {
+    background-color: #FFE2E5;
+    color: #FE0000;
+  }
+
+  &-info {
+    background-color: #DCFAFF;
+    color: #2CA9BC;
+  }
+
+  &-secondary {
+    background-color: #F3F6F9;
+    color: #333;
+  }
+}

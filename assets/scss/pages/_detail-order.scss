@@ -1,0 +1,248 @@
+.panel-detail-order {
+  border-radius: 14px;
+
+  &-heading {
+    padding: 19px 28px 24px;
+    border-bottom: 1px dashed #f2f2f2;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #1b1c32;
+  }
+
+  &-body {
+    padding: 29px 27px 33px;
+  }
+
+  &-info {
+    gap: 10px 0;
+    margin: 0 -5px 15px;
+
+    & > * {
+      padding: 0 5px;
+    }
+
+    &-item {
+      background-color: #fbfcfd;
+      border-radius: 8px;
+      border: 1px solid #f2f2f2;
+      padding: 8px 15px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 18px;
+
+      span {
+        font-weight: 600;
+        color: #70737d;
+        margin-top: 4px;
+      }
+    }
+
+    & > *:nth-child(2) &-item {
+      background-color: #e6fcff;
+
+      span {
+        color: #2ca9bc;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 11px;
+    color: #333;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 4px;
+      height: 4px;
+      border: 2px solid #fe0000;
+      border-radius: 50%;
+      margin-left: 3px;
+    }
+  }
+
+  &-description {
+    margin-bottom: 16px;
+
+    p {
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 20px;
+      color: #70737d;
+    }
+  }
+
+  &-info-tour {
+    gap: 4px 7px;
+    margin-bottom: 18px;
+
+    li {
+      flex: 1 0 calc(50% - 3.5px);
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 19px;
+      color: #70737d;
+      background-color: #fafafa;
+      border-radius: 7px;
+      padding: 12px 12px;
+
+      span {
+        color: #474b5b;
+      }
+
+      &:nth-child(3) {
+        background-color: #fff5e6;
+      }
+
+      &:nth-child(4) {
+        background-color: #ffe6e6;
+      }
+    }
+  }
+
+  iframe {
+    border-radius: 12px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    margin-bottom: 9px;
+  }
+
+  &-address {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 14px 22px;
+    margin-bottom: 17px;
+
+    & > div {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 32px;
+      color: #474b5b;
+      margin-right: 19px;
+
+      span {
+        color: #333;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &-info-user {
+    ul {
+      gap: 4px 7px;
+
+      li {
+        flex: 1 0 calc(50% - 3.5px);
+        border-radius: 7px;
+        background-color: #fafafa;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 19px;
+        color: #70737d;
+        padding: 12px 12px;
+
+        span {
+          color: #474b5b;
+        }
+      }
+    }
+  }
+
+  &-sidebar {
+    background-color: #FBFCFD;
+    border: 1px dashed #C1C1C1;
+    border-radius: 12px;
+    padding: 20px 20px 31px;
+
+    &-title {
+      font-weight: 800;
+      color: #333;
+      margin-bottom: 26px;
+    }
+
+    ul {
+      li {
+        position: relative;
+        font-size: 12px;
+        line-height: 40px;
+        font-weight: 500;
+
+        span {
+          font-size: 14px;
+          font-weight: 700;
+          color: #686868;
+        }
+
+        &:last-child {
+          &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            right: 0;
+            width: 44px;
+            height: 1px;
+            background-color: #FFAD01;
+          }
+        }
+      }
+    }
+
+    .total-price {
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: 800;
+      color: #333;
+      margin-top: 40px;
+
+      span {
+        color: #F64E64;
+      }
+    }
+  }
+
+  @include md {
+    margin: 0 -12px;
+    border-radius: 0;
+    
+    &-heading {
+      padding: 20px 12px;
+    }
+
+    &-body {
+      padding: 30px 12px;
+    }
+
+    &-sidebar {
+      margin-top: 20px;
+    }
+  }
+
+  @include sm {
+    &-address {
+      padding: 14px 12px;
+
+      &> div {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @include xs {
+    &-heading {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &-info-tour,
+    &-info-user ul {
+      li {
+        flex: 1 0 100%;
+      }
+    }
+  }
+}

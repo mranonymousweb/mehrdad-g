@@ -1,0 +1,38 @@
+.link-fixed {
+  position: absolute;
+  @include fix;
+  z-index: 3;
+}
+
+.quantity {
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  padding: 6px 5px;
+  gap: 4px;
+
+  button {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #70737d;
+    width: 80px;
+    padding: 2px 12px;
+    border-radius: 9px;
+
+    &:hover {
+      background-color: #05195e;
+      color: #fff;
+    }
+  }
+
+  .form-control {
+    border-color: #f3f3f3;
+    height: 44px;
+    border-radius: 9px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #333;
+    flex: 1 0 1%;
+  }
+}

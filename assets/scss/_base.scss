@@ -1,0 +1,133 @@
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: 100;
+//   src: url("./../fonts/yekanbakh/YekanBakh-thin.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: 300;
+//   src: url("./../fonts/yekanbakh/YekanBakh-Light.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: normal;
+//   src: url("./../fonts/yekanbakh/YekanBakh-Regular.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: 600;
+//   src: url("./../fonts/yekanbakh/YekanBakh-SemiBold.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: bold;
+//   src: url("./../fonts/yekanbakh/YekanBakh-Bold.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: 800;
+//   src: url("./../fonts/yekanbakh/YekanBakh-ExtraBold.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: 900;
+//   src: url("./../fonts/yekanbakh/YekanBakh-Black.woff") format("woff");
+//   font-display: block;
+// }
+
+// @font-face {
+//   font-family: "Yekan Bakh";
+//   font-style: normal;
+//   font-weight: 950;
+//   src: url("./../fonts/yekanbakh/YekanBakh-ExtraBlack.woff") format("woff");
+//   font-display: block;
+// }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: inherit;
+}
+
+img,
+video,
+svg,
+i {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @extend a;
+  }
+}
+
+a,
+button,
+input,
+.btn,
+.form-control {
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Yekan Bakh FaNum", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #70737d;
+}

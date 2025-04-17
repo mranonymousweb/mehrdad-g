@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مهرداد گردی">
+  <title> مهرداد گردی | دسته بندی </title>
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <link rel="stylesheet" href="./assets/css/persian-datepicker.min.css">
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- Start Header -->
+    <header class="top-header position-relative">
+      <div class="top-header-wrapper position-relative">
+        <div class="container d-flex align-items-center">
+          <!-- Start Btn Nav -->
+          <button type="button" class="top-header-btn-nav d-flex d-lg-none align-items-center justify-content-center"
+            aria-label="btn nav">
+            <i class="icon-menu"></i>
+          </button>
+          <!-- End Btn Nav -->
+          <!-- Start Logo -->
+          <a href="./index.html" class="top-header-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <!-- Start Nav -->
+          <nav class="top-header-nav d-none d-lg-block position-relative">
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="./index.html" class="active d-block"> صفحه اصلی </a>
+              </li>
+              <li>
+                <a href="./category.html" class="d-block"> خدمات ما </a>
+                <ul class="position-absolute">
+                  <li>
+                    <a href="#" class="d-block"> خدمات 1 </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات 02 </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات 03 </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./blog.html" class="d-block"> اخبار و مقالات </a>
+              </li>
+              <li>
+                <a href="./about-us.html" class="d-block"> درباره ما </a>
+              </li>
+              <li>
+                <a href="./contact-us.html" class="d-block"> تماس با ما </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Nav -->
+          <!-- Start Contact -->
+          <div class="top-header-contact d-flex align-items-center justify-content-center position-relative">
+            <a href="#" class="link-fixed" aria-label="name link"></a>
+            <div class="d-none d-md-block">
+              <div class="number">
+                0910<span>7321056</span>
+              </div>
+              <div class="sub-title"> پشتیبانی سریع </div>
+            </div>
+            <img src="./assets/images/icon/phone-01.svg" alt="phone" width="20" height="20">
+          </div>
+          <!-- End Contact -->
+          <!-- Start Search -->
+          <button type="button" class="top-header-search-btn d-none d-md-flex align-items-center justify-content-center"
+            data-toggle="modal" data-target="#modal-search" aria-label="btn search">
+            <i class="icon-search"></i>
+          </button>
+          <!-- End Search -->
+          <!-- Start Auth -->
+          <a href="./auth.html"
+            class="top-header-auth btn btn-primary d-flex align-items-end align-items-md-center justify-content-center" aria-label="auth">
+            <i class="icon-user d-none d-md-block"></i>
+            <i class="icon-user-2 d-md-none"></i>
+            <span class="d-none d-md-block"> ورود / ثبت نام </span>
+          </a>
+          <!-- <div class="top-header-auth-box position-relative">
+            <a href="./panel.html" class="top-header-auth-box-info d-flex align-items-center">
+              <img src="./assets/images/avatar/avatar-01.png" alt="avatar" width="40" height="40">
+              <span class="d-none d-sm-block"> صمد سپهری </span>
+            </a>
+            <ul class="top-header-auth-dropdown">
+              <li>
+                <i class="icon-user"></i>
+                صمد سپهری
+              </li>
+              <li>
+                <a href="#"> سفارش ها </a>
+              </li>
+              <li>
+                <a href="#"> لیست ها </a>
+              </li>
+              <li>
+                <a href="#"> دیدگاه ها </a>
+              </li>
+              <li>
+                <a href="#"> خروج از حساب کاربری </a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- End Auth -->
+        </div>
+        <!-- Start Search Mobile -->
+        <div class="container d-md-none">
+          <form method="get" action="#" class="search-mobile position-relative">
+            <input type="text" name="search" class="form-control" placeholder="دنبال چه چیزی هستین؟">
+            <button type="submit" class="position-absolute" aria-label="search">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- End Search Mobile -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Modal Search -->
+    <div id="modal-search" class="modal modal-search">
+      <div class="modal-dialog d-flex align-items-center justify-content-center">
+        <div class="modal-content">
+          <div class="modal-heading d-flex align-items-center justify-content-between">
+            <div class="modal-title"> دنبال چه چیزی میگردی؟ </div>
+            <button type="button" class="modal-close d-flex align-items-center justify-content-center">
+              <i class="icon-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" action="#" class="position-relative">
+              <i class="icon-search position-absolute"></i>
+              <input type="text" name="search" class="form-control" placeholder="کلمه کلیدی">
+              <button type="submit" class="btn btn-primary position-absolute"> جستجو </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Search -->
+    <!-- Start Nav Responsive -->
+    <nav class="nav-responsive position-fixed">
+      <div class="nav-responsive-backdrop position-fixed"></div>
+      <div class="nav-responsive-content position-absolute">
+        <div class="heading position-relative">
+          <!-- Start Logo -->
+          <a href="./index.html" class="nav-responsive-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <button type="button" class="nav-responsive-close d-flex align-items-center justify-content-center position-absolute">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <!-- Start Menu -->
+        <ul class="nav-responsive-menu">
+          <li>
+            <a href="./index.html" class="d-flex position-relative"> صفحه اصلی </a>
+          </li>
+          <li>
+            <a href="./category.html" class="d-flex position-relative"> خدمات ما </a>
+          </li>
+          <li>
+            <a href="./blog.html" class="d-flex position-relative"> اخبار و مقالات </a>
+          </li>
+          <li>
+            <a href="./about-us.html" class="d-flex position-relative"> درباره ما </a>
+          </li>
+          <li>
+            <a href="./contact-us.html" class="d-flex position-relative"> تماس با ما </a>
+          </li>
+        </ul>
+        <!-- End Menu -->
+        <!-- Start Contact -->
+        <div class="nav-responsive-contact d-flex align-items-center position-relative">
+          <a href="#" class="link-fixed" aria-label="name link"></a>
+          <div>
+            <div class="number">
+              0910<span>7321056</span>
+            </div>
+            <div class="sub-title"> پشتیبانی سریع </div>
+          </div>
+          <img src="./assets/images/icon/phone-01.svg" alt="phone" width="32" height="32">
+        </div>
+        <!-- End Contact -->
+        <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+          <i class="icon-user position-relative"></i>
+          ورود / ثبت نام
+        </a>
+      </div>
+    </nav>
+    <!-- End Nav Responsive -->
+    <!-- Start Category -->
+    <section class="category position-relative">
+      <div class="container">
+        <div class="row">
+          <!-- Start Sidebar -->
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside class="category-sidebar">
+              <!-- Start Search & Categories -->
+              <div class="category-sidebar-box category-sidebar-search-categories">
+                <!-- Start Search -->
+                <div class="category-sidebar-search position-relative">
+                  <i class="icon-search position-absolute"></i>
+                  <input type="text" name="search" class="form-control" placeholder="دسته مورد نظر شما">
+                  <button type="submit" class="btn btn-secondary-2 position-absolute">
+                    جستجو
+                  </button>
+                </div>
+                <!-- End Search -->
+                <!-- Start Categories -->
+                <div class="category-sidebar-categories">
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="category" value="all" id="category-all" hidden>
+                      <label for="category-all" class="d-flex align-items-center justify-content-between position-relative">
+                        همه دسته ها
+                        <span> 248 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="1" id="category-1" hidden>
+                      <label for="category-1" class="d-flex align-items-center justify-content-between position-relative">
+                        تفریحات و کنسرت
+                        <span> 24 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="2" id="category-2" hidden>
+                      <label for="category-2" class="d-flex align-items-center justify-content-between position-relative">
+                        بلیط پرواز و هتل
+                        <span> 10 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="3" id="category-3" hidden>
+                      <label for="category-3" class="d-flex align-items-center justify-content-between position-relative">
+                        ملک و سرمایه گذاری
+                        <span> 7 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="4" id="category-4" hidden>
+                      <label for="category-4" class="d-flex align-items-center justify-content-between position-relative">
+                        خدمات تحصیلی
+                        <span> 5 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="5" id="category-5" hidden>
+                      <label for="category-5" class="d-flex align-items-center justify-content-between position-relative">
+                        راه اندازی کسب و کار
+                        <span> 8 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="6" id="category-6" hidden>
+                      <label for="category-6" class="d-flex align-items-center justify-content-between position-relative">
+                        آنلاین شاپ
+                        <span> 20 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="7" id="category-7" hidden>
+                      <label for="category-7" class="d-flex align-items-center justify-content-between position-relative">
+                        باز سازی منزل
+                        <span> 0 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="8" id="category-8" hidden>
+                      <label for="category-8" class="d-flex align-items-center justify-content-between position-relative">
+                        بخش صرافی
+                        <span> 5 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="9" id="category-9" hidden>
+                      <label for="category-9" class="d-flex align-items-center justify-content-between position-relative">
+                        اجاره خانه
+                        <span> 4 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="10" id="category-10" hidden>
+                      <label for="category-10" class="d-flex align-items-center justify-content-between position-relative">
+                        اجاره ماشین
+                        <span> 8 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="11" id="category-11" hidden>
+                      <label for="category-11" class="d-flex align-items-center justify-content-between position-relative">
+                        تفریحات و کنسرت
+                        <span> 24 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="12" id="category-12" hidden>
+                      <label for="category-12" class="d-flex align-items-center justify-content-between position-relative">
+                        بلیط پرواز و هتل
+                        <span> 10 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="13" id="category-13" hidden>
+                      <label for="category-13" class="d-flex align-items-center justify-content-between position-relative">
+                        ملک و سرمایه گذاری
+                        <span> 7 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="14" id="category-14" hidden>
+                      <label for="category-14" class="d-flex align-items-center justify-content-between position-relative">
+                        خدمات تحصیلی
+                        <span> 5 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="15" id="category-15" hidden>
+                      <label for="category-15" class="d-flex align-items-center justify-content-between position-relative">
+                        راه اندازی کسب و کار
+                        <span> 8 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="16" id="category-16" hidden>
+                      <label for="category-16" class="d-flex align-items-center justify-content-between position-relative">
+                        آنلاین شاپ
+                        <span> 20 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="17" id="category-17" hidden>
+                      <label for="category-17" class="d-flex align-items-center justify-content-between position-relative">
+                        باز سازی منزل
+                        <span> 0 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="18" id="category-18" hidden>
+                      <label for="category-18" class="d-flex align-items-center justify-content-between position-relative">
+                        بخش صرافی
+                        <span> 5 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="19" id="category-19" hidden>
+                      <label for="category-19" class="d-flex align-items-center justify-content-between position-relative">
+                        اجاره خانه
+                        <span> 4 </span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" name="category" value="20" id="category-20" hidden>
+                      <label for="category-20" class="d-flex align-items-center justify-content-between position-relative">
+                        اجاره ماشین
+                        <span> 8 </span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Categories -->
+              </div>
+              <!-- End Search & Categories -->
+              <!-- Start Filter -->
+              <div class="category-sidebar-box category-sidebar-filter">
+                <div class="category-sidebar-filter-heading d-flex align-items-center position-relative">
+                  <i class="icon-setting"></i>
+                  فیلتر کردن بر اساس
+                </div>
+                <div class="search form-group position-relative">
+                  <input type="text" name="search-filter" class="form-control" placeholder="جستجو">
+                    <i class="icon-search position-absolute"></i>
+                </div>
+                <div class="form-group">
+                  <select name="country" class="form-control select-two">
+                    <option value=""> کشور </option>
+                    <option value="ir"> ایران </option>
+                    <option value="ch"> چین </option>
+                    <option value="ja"> ژاپن </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="city" class="form-control select-two">
+                    <option value=""> شهر </option>
+                    <option value="1"> تهران </option>
+                    <option value="1"> شیراز </option>
+                    <option value="1"> مشهد </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="price" class="form-control select-two">
+                    <option value=""> محدوده قیمت </option>
+                    <option value="1"> 1,000 تا 10,000 </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="price" class="form-control select-two">
+                    <option value=""> نوع پرداخت </option>
+                    <option value="1"> اینترنتی </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="date" class="form-control date" placeholder="تاریخ">
+                </div>
+                <div class="form-group switch">
+                  <input type="checkbox" name="activity" id="activity" class="switch-input" hidden>
+                  <label for="activity" class="switch-label position-relative d-block w-100">
+                    فقط موارد قابل رزرو
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-danger w-100 d-block text-center"> اعمال فیلتر </button>
+              </div>
+              <!-- End Filter -->
+            </aside>
+          </div>
+          <!-- End Sidebar -->
+          <div class="col-lg-8">
+            <div class="category-filter-mobile d-flex d-lg-none align-items-center">
+              <select name="category" class="form-control">
+                <option value=""> انتخاب دسته بندی </option>
+                <option value="1"> تفریحات و کنسرت </option>
+                <option value="2"> بلیط پرواز و هتل </option>
+              </select>
+              <select name="category" class="form-control">
+                <option value=""> فیلتر کردن بر اساس </option>
+                <option value="1"> جدیدترین ها </option>
+                <option value="2"> قدیمیترین ها </option>
+              </select>
+            </div>
+            <!-- Start Sorts -->
+            <ul class="category-sort d-flex align-items-center">
+              <li>
+                <a href="#" class="active d-block"> جدیدترین ها </a>
+              </li>
+              <li>
+                <a href="#" class="d-block"> محبوب ترین </a>
+              </li>
+              <li>
+                <a href="#" class="d-block"> قابل رزرو </a>
+              </li>
+              <li>
+                <a href="#" class="d-block"> ارزان ترین </a>
+              </li>
+              <li>
+                <a href="#" class="d-block"> گران ترین </a>
+              </li>
+            </ul>
+            <!-- End Sorts -->
+            <!-- Start Tours -->
+            <div class="row category-tours">
+              <!-- Start Tour -->
+              <div class="col-6">
+                <div class="tour-item position-relative">
+                  <div class="image position-relative">
+                    <a href="#" class="d-block">
+                      <img src="./assets/images/other/tour-01.png" alt="image" width="269" height="225" class="d-block w-100">
+                    </a>
+                    <a href="#" class="location position-absolute d-flex align-items-center justify-content-center">
+                      <i class="icon-location"></i>
+                      استانبول
+                    </a>
+                  </div>
+                  <div class="hr position-relative d-none d-md-block"></div>
+                  <h2 class="title">
+                    <a href="#" class="d-block overflow-hidden"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </a>
+                  </h2>
+                  <ul class="d-flex align-items-center">
+                    <li class="w-100">
+                      <span class="d-block"> تاریخ شروع: </span>
+                      1402/08/21
+                    </li>
+                    <li class="w-100">
+                      <span class="d-block"> پایان برنامه: </span>
+                      1402/09/21
+                    </li>
+                    <li class="w-100 d-none d-md-block">
+                      <span class="d-block"> ظرفیت کل: </span>
+                      8999 نفر
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                    <div class="price d-flex align-items-center flex-wrap">
+                      شروع قیمت: 
+                      <span> 3.000.000 تومان </span>
+                    </div>
+                    <a href="#" class="btn btn-secondary-3 d-flex align-items-center justify-content-center">
+                      رزرو کردن
+                      <i class="icon-arrow-left-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tour -->
+              <!-- Start Tour -->
+              <div class="col-6">
+                <div class="tour-item position-relative">
+                  <div class="image position-relative">
+                    <a href="#" class="d-block">
+                      <img src="./assets/images/other/tour-02.png" alt="image" width="269" height="225" class="d-block w-100">
+                    </a>
+                    <a href="#" class="location position-absolute d-flex align-items-center justify-content-center">
+                      <i class="icon-location"></i>
+                      استانبول
+                    </a>
+                  </div>
+                  <div class="hr position-relative d-none d-md-block"></div>
+                  <h2 class="title">
+                    <a href="#" class="d-block overflow-hidden"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </a>
+                  </h2>
+                  <ul class="d-flex align-items-center">
+                    <li class="w-100">
+                      <span class="d-block"> تاریخ شروع: </span>
+                      1402/08/21
+                    </li>
+                    <li class="w-100">
+                      <span class="d-block"> پایان برنامه: </span>
+                      1402/09/21
+                    </li>
+                    <li class="w-100 d-none d-md-block">
+                      <span class="d-block"> ظرفیت کل: </span>
+                      8999 نفر
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                    <div class="price d-flex align-items-center flex-wrap">
+                      شروع قیمت: 
+                      <span> 3.000.000 تومان </span>
+                    </div>
+                    <a href="#" class="btn btn-secondary-3 d-flex align-items-center justify-content-center">
+                      رزرو کردن
+                      <i class="icon-arrow-left-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tour -->
+              <!-- Start Tour -->
+              <div class="col-6">
+                <div class="tour-item position-relative">
+                  <div class="image position-relative">
+                    <a href="#" class="d-block">
+                      <img src="./assets/images/other/tour-03.png" alt="image" width="269" height="225" class="d-block w-100">
+                    </a>
+                    <a href="#" class="location position-absolute d-flex align-items-center justify-content-center">
+                      <i class="icon-location"></i>
+                      استانبول
+                    </a>
+                  </div>
+                  <div class="hr position-relative d-none d-md-block"></div>
+                  <h2 class="title">
+                    <a href="#" class="d-block overflow-hidden"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </a>
+                  </h2>
+                  <ul class="d-flex align-items-center">
+                    <li class="w-100">
+                      <span class="d-block"> تاریخ شروع: </span>
+                      1402/08/21
+                    </li>
+                    <li class="w-100">
+                      <span class="d-block"> پایان برنامه: </span>
+                      1402/09/21
+                    </li>
+                    <li class="w-100 d-none d-md-block">
+                      <span class="d-block"> ظرفیت کل: </span>
+                      8999 نفر
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                    <div class="price d-flex align-items-center flex-wrap">
+                      شروع قیمت: 
+                      <span> 3.000.000 تومان </span>
+                    </div>
+                    <a href="#" class="btn btn-secondary-3 d-flex align-items-center justify-content-center">
+                      رزرو کردن
+                      <i class="icon-arrow-left-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tour -->
+              <!-- Start Tour -->
+              <div class="col-6">
+                <div class="tour-item position-relative">
+                  <div class="image position-relative">
+                    <a href="#" class="d-block">
+                      <img src="./assets/images/other/tour-04.png" alt="image" width="269" height="225" class="d-block w-100">
+                    </a>
+                    <a href="#" class="location position-absolute d-flex align-items-center justify-content-center">
+                      <i class="icon-location"></i>
+                      استانبول
+                    </a>
+                  </div>
+                  <div class="hr position-relative d-none d-md-block"></div>
+                  <h2 class="title">
+                    <a href="#" class="d-block overflow-hidden"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </a>
+                  </h2>
+                  <ul class="d-flex align-items-center">
+                    <li class="w-100">
+                      <span class="d-block"> تاریخ شروع: </span>
+                      1402/08/21
+                    </li>
+                    <li class="w-100">
+                      <span class="d-block"> پایان برنامه: </span>
+                      1402/09/21
+                    </li>
+                    <li class="w-100 d-none d-md-block">
+                      <span class="d-block"> ظرفیت کل: </span>
+                      8999 نفر
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                    <div class="price d-flex align-items-center flex-wrap">
+                      شروع قیمت: 
+                      <span> 3.000.000 تومان </span>
+                    </div>
+                    <a href="#" class="btn btn-secondary-3 d-flex align-items-center justify-content-center">
+                      رزرو کردن
+                      <i class="icon-arrow-left-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tour -->
+              <!-- Start Tour -->
+              <div class="col-6">
+                <div class="tour-item position-relative">
+                  <div class="image position-relative">
+                    <a href="#" class="d-block">
+                      <img src="./assets/images/other/tour-05.png" alt="image" width="269" height="225" class="d-block w-100">
+                    </a>
+                    <a href="#" class="location position-absolute d-flex align-items-center justify-content-center">
+                      <i class="icon-location"></i>
+                      استانبول
+                    </a>
+                  </div>
+                  <div class="hr position-relative d-none d-md-block"></div>
+                  <h2 class="title">
+                    <a href="#" class="d-block overflow-hidden"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </a>
+                  </h2>
+                  <ul class="d-flex align-items-center">
+                    <li class="w-100">
+                      <span class="d-block"> تاریخ شروع: </span>
+                      1402/08/21
+                    </li>
+                    <li class="w-100">
+                      <span class="d-block"> پایان برنامه: </span>
+                      1402/09/21
+                    </li>
+                    <li class="w-100 d-none d-md-block">
+                      <span class="d-block"> ظرفیت کل: </span>
+                      8999 نفر
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                    <div class="price d-flex align-items-center flex-wrap">
+                      شروع قیمت: 
+                      <span> 3.000.000 تومان </span>
+                    </div>
+                    <a href="#" class="btn btn-secondary-3 d-flex align-items-center justify-content-center">
+                      رزرو کردن
+                      <i class="icon-arrow-left-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tour -->
+              <!-- Start Tour -->
+              <div class="col-6">
+                <div class="tour-item position-relative">
+                  <div class="image position-relative">
+                    <a href="#" class="d-block">
+                      <img src="./assets/images/other/tour-06.png" alt="image" width="269" height="225" class="d-block w-100">
+                    </a>
+                    <a href="#" class="location position-absolute d-flex align-items-center justify-content-center">
+                      <i class="icon-location"></i>
+                      استانبول
+                    </a>
+                  </div>
+                  <div class="hr position-relative d-none d-md-block"></div>
+                  <h2 class="title">
+                    <a href="#" class="d-block overflow-hidden"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </a>
+                  </h2>
+                  <ul class="d-flex align-items-center">
+                    <li class="w-100">
+                      <span class="d-block"> تاریخ شروع: </span>
+                      1402/08/21
+                    </li>
+                    <li class="w-100">
+                      <span class="d-block"> پایان برنامه: </span>
+                      1402/09/21
+                    </li>
+                    <li class="w-100 d-none d-md-block">
+                      <span class="d-block"> ظرفیت کل: </span>
+                      8999 نفر
+                    </li>
+                  </ul>
+                  <div class="d-flex align-items-md-center justify-content-between flex-column flex-md-row">
+                    <div class="price d-flex align-items-center flex-wrap">
+                      شروع قیمت: 
+                      <span> 3.000.000 تومان </span>
+                    </div>
+                    <a href="#" class="btn btn-secondary-3 d-flex align-items-center justify-content-center">
+                      رزرو کردن
+                      <i class="icon-arrow-left-circle"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- End Tour -->
+            </div>
+            <!-- End Tours -->
+            <!-- <img src="./assets/images/other/loading.png" alt="loading" width="36" height="36" class="category-loading d-block"> -->
+            <div class="pagination d-flex align-items-center flex-wrap justify-content-center">
+              <a href="#" class="pagination-next d-flex align-items-center justify-content-center">
+                <i class="icon-angle-right"></i>
+              </a>
+              <ul class="d-flex align-items-center flex-wrap">
+                <li>
+                  <a href="#" class="active d-flex align-items-center justify-content-center"> 1 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 2 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 3 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 4 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 5 </a>
+                </li>
+              </ul>
+              <a href="#" class="pagination-prev d-flex align-items-center justify-content-center">
+                <i class="icon-angle-left"></i>
+              </a>
+              <div class="pagination-count-page d-flex align-items-center">
+                تعداد صفخات
+                <a href="#" class="d-flex align-items-center justify-content-center"> 11 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Category -->
+    <!-- Start Footer -->
+    <footer class="footer position-relative">
+      <div class="container">
+        <button type="button" class="btn-scroll footer-scroll position-absolute d-flex align-items-center justify-content-center" aria-label="scroll down">
+          <i class="icon-angle-up d-flex align-items-center justify-content-center position-relative"></i>
+        </button>
+        <div class="row">
+          <div class="col-lg-5">
+            <!-- Start Logo -->
+            <a href="#" class="footer-logo d-block position-relative">
+              <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+            </a>
+            <!-- End Logo -->
+            <!-- Start News Letter -->
+            <div class="footer-newsletter">
+              <div class="title d-flex align-items-center">
+                <i class="icon-angle-left"></i>
+                با ثبت ایمیل، از جدید‌ترین برنامه،اخبار،بلیط ها با‌خبر شوید
+              </div>
+              <form method="post" action="#" class="position-relative">
+                <input type="email" name="newsletter" class="form-control" placeholder="ایمیل">
+                <button type="submit" class="btn btn-secondary position-absolute"> عضویت </button>
+              </form>
+            </div>
+            <!-- End News Letter -->
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-3 order-1">
+                <div class="footer-title position-relative">
+                  <div>
+                    <span> دسترسی </span>
+                    سریع
+                  </div>
+                </div>
+                <ul class="footer-nav d-flex d-lg-block align-items-center">
+                  <li>
+                    <a href="#" class="d-block"> صفحه اصلی </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> ورود | ثبت نام </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات ما </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> درباره ما </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-5 order-3 order-lg-2">
+                <div class="footer-title position-relative">
+                  <div>
+                    <span> ارتباط </span>
+                    با مهرداد گردی
+                  </div>
+                </div>
+                <ul class="footer-contact d-flex d-lg-block flex-wrap">
+                  <li class="d-flex">
+                    <span> آدرس: </span>
+                    <div>
+                      ایران، تهران، میدان آزادی، نرسیده به خیابان مفید
+                      به سمت بیمارستان آزادی
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <span> تلفن: </span>
+                    <div>
+                      0910<span>7321056</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <span> ایمیل: </span>
+                    <div> info@mehrdadgardi.com </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-2 order-lg-3 iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207344.50843900483!2d51.347655249999995!3d35.707573749999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province!5e0!3m2!1sen!2s!4v1694241521261!5m2!1sen!2s"
+                  width="179" height="184" title="map tehran" class="w-100 d-block"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex align-items-lg-center justify-content-lg-between flex-column flex-lg-row">
+          <!-- Start Socials -->
+          <div class="footer-socials d-flex align-items-lg-center flex-column flex-lg-row">
+            <div class="position-relative">
+              <span> در شبکه‌های اجتماعی ما را دنبال کنید: </span>
+            </div>
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#" class="d-block" aria-label="twitter">
+                  <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="linkedin">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="facebook">
+                  <i class="icon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="instagram">
+                  <i class="icon-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="telegram">
+                  <i class="icon-telegram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Ene Socials -->
+          <div class="footer-copyright text-center text-lg-left"> تمامی حقوق مادی و معنوی برای سایت مهرداد گردی محفوظ می
+            باشد و کپی برداری از آن پیگرد قانونی خواهد داشت. </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/nice-select2.js"></script>
+  <script src="./assets/js/persian-date.min.js"></script>
+  <script src="./assets/js/persian-datepicker.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

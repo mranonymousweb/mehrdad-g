@@ -1,0 +1,66 @@
+.uploader {
+  background-color: #fafafa;
+  border: 1px solid #eaeeee;
+  border-radius: 5px;
+  padding: 31px 24px 26px;
+  cursor: pointer;
+
+  input {
+    opacity: 0;
+    @include fix;
+    z-index: 4;
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 45px;
+    color: rgba(#70737d, 0.52);
+  }
+
+  .title {
+    margin: 16px 0 7px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    color: #2c3339;
+  }
+
+  .sub-title {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #70737d;
+  }
+}
+
+.uploader-file {
+  &-label {
+    height: 46px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    padding: 0 88px 0 12px;
+    color: #70737d;
+    cursor: pointer;
+    margin: 0;
+
+    &::before {
+      content: "انتخاب کردن";
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #fff;
+      border: 3px solid #fafafa;
+      border-radius: 8px;
+      color: #001375;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 19px;
+      height: calc(100% - 6px);
+      padding: 0 6px;
+      @include flex(center, center);
+    }
+  }
+}

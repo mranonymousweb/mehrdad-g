@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مهرداد گردی">
+  <title> مهرداد گردی | مشخصات تور </title>
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- Start Header -->
+    <header class="top-header position-relative">
+      <div class="top-header-wrapper position-relative">
+        <div class="container d-flex align-items-center">
+          <!-- Start Btn Nav -->
+          <button type="button" class="top-header-btn-nav d-flex d-lg-none align-items-center justify-content-center"
+            aria-label="btn nav">
+            <i class="icon-menu"></i>
+          </button>
+          <!-- End Btn Nav -->
+          <!-- Start Logo -->
+          <a href="./index.html" class="top-header-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <!-- Start Nav -->
+          <nav class="top-header-nav d-none d-lg-block position-relative">
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="./index.html" class="active d-block"> صفحه اصلی </a>
+              </li>
+              <li>
+                <a href="./category.html" class="d-block"> خدمات ما </a>
+                <ul class="position-absolute">
+                  <li>
+                    <a href="#" class="d-block"> خدمات 1 </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات 02 </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات 03 </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./blog.html" class="d-block"> اخبار و مقالات </a>
+              </li>
+              <li>
+                <a href="./about-us.html" class="d-block"> درباره ما </a>
+              </li>
+              <li>
+                <a href="./contact-us.html" class="d-block"> تماس با ما </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Nav -->
+          <!-- Start Contact -->
+          <div class="top-header-contact d-flex align-items-center justify-content-center position-relative">
+            <a href="#" class="link-fixed" aria-label="name link"></a>
+            <div class="d-none d-md-block">
+              <div class="number">
+                0910<span>7321056</span>
+              </div>
+              <div class="sub-title"> پشتیبانی سریع </div>
+            </div>
+            <img src="./assets/images/icon/phone-01.svg" alt="phone" width="20" height="20">
+          </div>
+          <!-- End Contact -->
+          <!-- Start Search -->
+          <button type="button" class="top-header-search-btn d-none d-md-flex align-items-center justify-content-center"
+            data-toggle="modal" data-target="#modal-search" aria-label="btn search">
+            <i class="icon-search"></i>
+          </button>
+          <!-- End Search -->
+          <!-- Start Auth -->
+          <a href="./auth.html"
+            class="top-header-auth btn btn-primary d-flex align-items-end align-items-md-center justify-content-center" aria-label="auth">
+            <i class="icon-user d-none d-md-block"></i>
+            <i class="icon-user-2 d-md-none"></i>
+            <span class="d-none d-md-block"> ورود / ثبت نام </span>
+          </a>
+          <!-- <div class="top-header-auth-box position-relative">
+            <a href="./panel.html" class="top-header-auth-box-info d-flex align-items-center">
+              <img src="./assets/images/avatar/avatar-01.png" alt="avatar" width="40" height="40">
+              <span class="d-none d-sm-block"> صمد سپهری </span>
+            </a>
+            <ul class="top-header-auth-dropdown">
+              <li>
+                <i class="icon-user"></i>
+                صمد سپهری
+              </li>
+              <li>
+                <a href="#"> سفارش ها </a>
+              </li>
+              <li>
+                <a href="#"> لیست ها </a>
+              </li>
+              <li>
+                <a href="#"> دیدگاه ها </a>
+              </li>
+              <li>
+                <a href="#"> خروج از حساب کاربری </a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- End Auth -->
+        </div>
+        <!-- Start Search Mobile -->
+        <div class="container d-md-none">
+          <form method="get" action="#" class="search-mobile position-relative">
+            <input type="text" name="search" class="form-control" placeholder="دنبال چه چیزی هستین؟">
+            <button type="submit" class="position-absolute" aria-label="search">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- End Search Mobile -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Modal Search -->
+    <div id="modal-search" class="modal modal-search">
+      <div class="modal-dialog d-flex align-items-center justify-content-center">
+        <div class="modal-content">
+          <div class="modal-heading d-flex align-items-center justify-content-between">
+            <div class="modal-title"> دنبال چه چیزی میگردی؟ </div>
+            <button type="button" class="modal-close d-flex align-items-center justify-content-center">
+              <i class="icon-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" action="#" class="position-relative">
+              <i class="icon-search position-absolute"></i>
+              <input type="text" name="search" class="form-control" placeholder="کلمه کلیدی">
+              <button type="submit" class="btn btn-primary position-absolute"> جستجو </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Search -->
+    <!-- Start Nav Responsive -->
+    <nav class="nav-responsive position-fixed">
+      <div class="nav-responsive-backdrop position-fixed"></div>
+      <div class="nav-responsive-content position-absolute">
+        <div class="heading position-relative">
+          <!-- Start Logo -->
+          <a href="./index.html" class="nav-responsive-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <button type="button"
+            class="nav-responsive-close d-flex align-items-center justify-content-center position-absolute">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <!-- Start Menu -->
+        <ul class="nav-responsive-menu">
+          <li>
+            <a href="./index.html" class="d-flex position-relative"> صفحه اصلی </a>
+          </li>
+          <li>
+            <a href="./category.html" class="d-flex position-relative"> خدمات ما </a>
+          </li>
+          <li>
+            <a href="./blog.html" class="d-flex position-relative"> اخبار و مقالات </a>
+          </li>
+          <li>
+            <a href="./about-us.html" class="d-flex position-relative"> درباره ما </a>
+          </li>
+          <li>
+            <a href="./contact-us.html" class="d-flex position-relative"> تماس با ما </a>
+          </li>
+        </ul>
+        <!-- End Menu -->
+        <!-- Start Contact -->
+        <div class="nav-responsive-contact d-flex align-items-center position-relative">
+          <a href="#" class="link-fixed" aria-label="name link"></a>
+          <div>
+            <div class="number">
+              0910<span>7321056</span>
+            </div>
+            <div class="sub-title"> پشتیبانی سریع </div>
+          </div>
+          <img src="./assets/images/icon/phone-01.svg" alt="phone" width="32" height="32">
+        </div>
+        <!-- End Contact -->
+        <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+          <i class="icon-user position-relative"></i>
+          ورود / ثبت نام
+        </a>
+      </div>
+    </nav>
+    <!-- End Nav Responsive -->
+    <!-- Start Checkout -->
+    <div class="checkout overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="checkout-box position-relative">
+              <div class="title"> تکمیل اطلاعات </div>
+              <form method="post" action="#" class="row">
+                <div class="col-12">
+                  <div class="from-group">
+                    <label for="full-name" class="d-inline-block"> نام و نام خانوادگی </label>
+                    <input type="text" name="full-name" id="full-name" class="form-control" placeholder="نام و نام خانودگی خودتان را وارد کنید">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-group">
+                    <label for="phone" class="d-inline-block"> شماره تلفن </label>
+                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="شماره تلفن خودتان را وارد کنید">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-group">
+                    <label for="email" class="d-inline-block"> ایمیل </label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="ایمیل خودتان را وارد کنید">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-group">
+                    <label for="name-hotel" class="d-inline-block"> اسم هتل </label>
+                    <input type="text" name="name-hotel" id="name-hotel" class="form-control" placeholder="اسم هتل را اینجا وارد کنید">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="from-group">
+                    <label for="number-room" class="d-inline-block"> شماره اتاق </label>
+                    <input type="text" name="number-room" id="number-room" class="form-control" placeholder="شماره اتاق خودتان را اینجا وارد کنید">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="from-group">
+                    <label for="address" class="d-inline-block"> محدوده یا آدرس دقق هتل </label>
+                    <textarea name="address" id="address" class="form-control" placeholder="آدرس خودتان را اینجا وارد کنید"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <aside class="checkout-sidebar position-relative">
+              <div class="content position-relative">
+                <div class="title"> جزئیات خرید </div>
+                <div class="sub-title"> عنوان برنامه و یا بلیط در اینجا قرار میگرد </div>
+                <div class="form-group type">
+                  <label for="type" class="d-inline-block"> انتخاب نوع بلیط </label>
+                  <select name="type" id="type" class="form-control select-two">
+                    <option value="1"> وی آی پی  |   35.000.000 تومان | هر نفر </option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="d-flex align-items-center">
+                    تعداد بلیط
+                    <span class="icon">
+                      <i class="icon-ques-circle"></i>
+                    </span>
+                  </label>
+                  <div class="quantity d-flex align-items-center">
+                    <button type="button" class="increment d-flex align-items-center justify-content-center"> + </button>
+                    <input type="number" name="quantity" class="form-control text-center" value="1" readonly aria-label="quantity">
+                    <button type="button" class="decrement d-flex align-items-center justify-content-center"> - </button>
+                  </div>
+                </div>
+                <div class="total-price d-flex align-items-center justify-content-center flex-column">
+                  جمع کل فاکتور:
+                  <div>
+                    <span> 105,000,000 </span>
+                    تومان
+                  </div>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" name="terms" id="terms" class="checkbox-input" hidden>
+                  <label for="terms" class="checkbox-label">
+                    قبول
+                    <a href="#"> قوانین و مقرارت </a>
+                    خرید از مهراد گردی
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-danger d-flex align-items-center justify-content-center w-100">
+                  <i class="icon-shopping-basket"></i>
+                  ثبت و پرداخت 
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Checkout -->
+    <!-- Start Footer -->
+    <footer class="footer position-relative">
+      <div class="container">
+        <button type="button"
+          class="btn-scroll footer-scroll position-absolute d-flex align-items-center justify-content-center"
+          aria-label="scroll down">
+          <i class="icon-angle-up d-flex align-items-center justify-content-center position-relative"></i>
+        </button>
+        <div class="row">
+          <div class="col-lg-5">
+            <!-- Start Logo -->
+            <a href="#" class="footer-logo d-block position-relative">
+              <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+            </a>
+            <!-- End Logo -->
+            <!-- Start News Letter -->
+            <div class="footer-newsletter">
+              <div class="title d-flex align-items-center">
+                <i class="icon-angle-left"></i>
+                با ثبت ایمیل، از جدید‌ترین برنامه،اخبار،بلیط ها با‌خبر شوید
+              </div>
+              <form method="post" action="#" class="position-relative">
+                <input type="email" name="newsletter" class="form-control" placeholder="ایمیل">
+                <button type="submit" class="btn btn-secondary position-absolute"> عضویت </button>
+              </form>
+            </div>
+            <!-- End News Letter -->
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-3 order-1">
+                <div class="footer-title position-relative">
+                  <div>
+                    <span> دسترسی </span>
+                    سریع
+                  </div>
+                </div>
+                <ul class="footer-nav d-flex d-lg-block align-items-center">
+                  <li>
+                    <a href="#" class="d-block"> صفحه اصلی </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> ورود | ثبت نام </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات ما </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> درباره ما </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-5 order-3 order-lg-2">
+                <div class="footer-title position-relative">
+                  <div>
+                    <span> ارتباط </span>
+                    با مهرداد گردی
+                  </div>
+                </div>
+                <ul class="footer-contact d-flex d-lg-block flex-wrap">
+                  <li class="d-flex">
+                    <span> آدرس: </span>
+                    <div>
+                      ایران، تهران، میدان آزادی، نرسیده به خیابان مفید
+                      به سمت بیمارستان آزادی
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <span> تلفن: </span>
+                    <div>
+                      0910<span>7321056</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <span> ایمیل: </span>
+                    <div> info@mehrdadgardi.com </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-2 order-lg-3 iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207344.50843900483!2d51.347655249999995!3d35.707573749999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province!5e0!3m2!1sen!2s!4v1694241521261!5m2!1sen!2s"
+                  width="179" height="184" title="map tehran" class="w-100 d-block"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex align-items-lg-center justify-content-lg-between flex-column flex-lg-row">
+          <!-- Start Socials -->
+          <div class="footer-socials d-flex align-items-lg-center flex-column flex-lg-row">
+            <div class="position-relative">
+              <span> در شبکه‌های اجتماعی ما را دنبال کنید: </span>
+            </div>
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#" class="d-block" aria-label="twitter">
+                  <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="linkedin">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="facebook">
+                  <i class="icon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="instagram">
+                  <i class="icon-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="telegram">
+                  <i class="icon-telegram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Ene Socials -->
+          <div class="footer-copyright text-center text-lg-left"> تمامی حقوق مادی و معنوی برای سایت مهرداد گردی محفوظ می
+            باشد و کپی برداری از آن پیگرد قانونی خواهد داشت. </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/nice-select2.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

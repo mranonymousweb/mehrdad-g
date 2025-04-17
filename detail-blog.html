@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مهرداد گردی">
+  <title> مهرداد گردی | مشخصات وبلاگ </title>
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+  <div class="app overflow-hidden">
+    <!-- Start Header -->
+    <header class="top-header position-relative">
+      <div class="top-header-wrapper position-relative">
+        <div class="container d-flex align-items-center">
+          <!-- Start Btn Nav -->
+          <button type="button" class="top-header-btn-nav d-flex d-lg-none align-items-center justify-content-center"
+            aria-label="btn nav">
+            <i class="icon-menu"></i>
+          </button>
+          <!-- End Btn Nav -->
+          <!-- Start Logo -->
+          <a href="./index.html" class="top-header-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <!-- Start Nav -->
+          <nav class="top-header-nav d-none d-lg-block position-relative">
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="./index.html" class="active d-block"> صفحه اصلی </a>
+              </li>
+              <li>
+                <a href="./category.html" class="d-block"> خدمات ما </a>
+                <ul class="position-absolute">
+                  <li>
+                    <a href="#" class="d-block"> خدمات 1 </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات 02 </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات 03 </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="./blog.html" class="d-block"> اخبار و مقالات </a>
+              </li>
+              <li>
+                <a href="./about-us.html" class="d-block"> درباره ما </a>
+              </li>
+              <li>
+                <a href="./contact-us.html" class="d-block"> تماس با ما </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Nav -->
+          <!-- Start Contact -->
+          <div class="top-header-contact d-flex align-items-center justify-content-center position-relative">
+            <a href="#" class="link-fixed" aria-label="name link"></a>
+            <div class="d-none d-md-block">
+              <div class="number">
+                0910<span>7321056</span>
+              </div>
+              <div class="sub-title"> پشتیبانی سریع </div>
+            </div>
+            <img src="./assets/images/icon/phone-01.svg" alt="phone" width="20" height="20">
+          </div>
+          <!-- End Contact -->
+          <!-- Start Search -->
+          <button type="button" class="top-header-search-btn d-none d-md-flex align-items-center justify-content-center"
+            data-toggle="modal" data-target="#modal-search" aria-label="btn search">
+            <i class="icon-search"></i>
+          </button>
+          <!-- End Search -->
+          <!-- Start Auth -->
+          <a href="./auth.html"
+            class="top-header-auth btn btn-primary d-flex align-items-end align-items-md-center justify-content-center" aria-label="auth">
+            <i class="icon-user d-none d-md-block"></i>
+            <i class="icon-user-2 d-md-none"></i>
+            <span class="d-none d-md-block"> ورود / ثبت نام </span>
+          </a>
+          <!-- <div class="top-header-auth-box position-relative">
+            <a href="./panel.html" class="top-header-auth-box-info d-flex align-items-center">
+              <img src="./assets/images/avatar/avatar-01.png" alt="avatar" width="40" height="40">
+              <span class="d-none d-sm-block"> صمد سپهری </span>
+            </a>
+            <ul class="top-header-auth-dropdown">
+              <li>
+                <i class="icon-user"></i>
+                صمد سپهری
+              </li>
+              <li>
+                <a href="#"> سفارش ها </a>
+              </li>
+              <li>
+                <a href="#"> لیست ها </a>
+              </li>
+              <li>
+                <a href="#"> دیدگاه ها </a>
+              </li>
+              <li>
+                <a href="#"> خروج از حساب کاربری </a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- End Auth -->
+        </div>
+        <!-- Start Search Mobile -->
+        <div class="container d-md-none">
+          <form method="get" action="#" class="search-mobile position-relative">
+            <input type="text" name="search" class="form-control" placeholder="دنبال چه چیزی هستین؟">
+            <button type="submit" class="position-absolute" aria-label="search">
+              <i class="icon-search"></i>
+            </button>
+          </form>
+        </div>
+        <!-- End Search Mobile -->
+      </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Modal Search -->
+    <div id="modal-search" class="modal modal-search">
+      <div class="modal-dialog d-flex align-items-center justify-content-center">
+        <div class="modal-content">
+          <div class="modal-heading d-flex align-items-center justify-content-between">
+            <div class="modal-title"> دنبال چه چیزی میگردی؟ </div>
+            <button type="button" class="modal-close d-flex align-items-center justify-content-center">
+              <i class="icon-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="get" action="#" class="position-relative">
+              <i class="icon-search position-absolute"></i>
+              <input type="text" name="search" class="form-control" placeholder="کلمه کلیدی">
+              <button type="submit" class="btn btn-primary position-absolute"> جستجو </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Search -->
+    <!-- Start Nav Responsive -->
+    <nav class="nav-responsive position-fixed">
+      <div class="nav-responsive-backdrop position-fixed"></div>
+      <div class="nav-responsive-content position-absolute">
+        <div class="heading position-relative">
+          <!-- Start Logo -->
+          <a href="./index.html" class="nav-responsive-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <button type="button" class="nav-responsive-close d-flex align-items-center justify-content-center position-absolute">
+            <i class="icon-close"></i>
+          </button>
+        </div>
+        <!-- Start Menu -->
+        <ul class="nav-responsive-menu">
+          <li>
+            <a href="./index.html" class="d-flex position-relative"> صفحه اصلی </a>
+          </li>
+          <li>
+            <a href="./category.html" class="d-flex position-relative"> خدمات ما </a>
+          </li>
+          <li>
+            <a href="./blog.html" class="d-flex position-relative"> اخبار و مقالات </a>
+          </li>
+          <li>
+            <a href="./about-us.html" class="d-flex position-relative"> درباره ما </a>
+          </li>
+          <li>
+            <a href="./contact-us.html" class="d-flex position-relative"> تماس با ما </a>
+          </li>
+        </ul>
+        <!-- End Menu -->
+        <!-- Start Contact -->
+        <div class="nav-responsive-contact d-flex align-items-center position-relative">
+          <a href="#" class="link-fixed" aria-label="name link"></a>
+          <div>
+            <div class="number">
+              0910<span>7321056</span>
+            </div>
+            <div class="sub-title"> پشتیبانی سریع </div>
+          </div>
+          <img src="./assets/images/icon/phone-01.svg" alt="phone" width="32" height="32">
+        </div>
+        <!-- End Contact -->
+        <a href="#" class="btn btn-primary w-100 d-flex align-items-center justify-content-center">
+          <i class="icon-user position-relative"></i>
+          ورود / ثبت نام
+        </a>
+      </div>
+    </nav>
+    <!-- End Nav Responsive -->
+    <!-- Start Detail Blog -->
+    <section class="detail-blog position-relative">
+      <div class="container">
+        <div class="detail-blog-wrapper w-100">
+          <!-- Start Image -->
+          <div class="detail-blog-image">
+            <img src="./assets/images/article/article-10.png" alt="aticle" width="966" height="512" class="d-block w-100">
+          </div>
+          <!-- End Image -->
+          <!-- Start Info -->
+          <div class="detail-blog-info">
+            <h1 class="title text-md-center"> در اینجا عنوان مطلب قرار میگرد و این یک متن تست هست </h1>
+            <ul class="d-flex align-items-center justify-content-md-center flex-wrap flex-md-nowrap">
+              <li>
+                <a href="#" class="author d-flex align-items-center">
+                  <img src="./assets/images/avatar/avatar-02.png" alt="avatar" width="36" height="36">
+                  صمد سپهری
+                </a>
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="icon-calendar d-flex align-items-center justify-content-center"></i>
+                2 هفته پیش
+              </li>
+              <li class="d-flex align-items-center">
+                <i class="icon-watch d-flex align-items-center justify-content-center"></i>
+                03 دقیقه
+              </li>
+              <li class="d-none d-md-flex align-items-center">
+                <i class="icon-folder d-flex align-items-center justify-content-center"></i>
+                دسته: <a href="#"> متفرقه </a>
+              </li>
+            </ul>
+          </div>
+          <!-- End Info -->
+          <!-- Start Content -->
+          <div class="detail-blog-content">
+            <h3 class="has-line"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h3>
+            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.  </p>
+            <div class="list">
+              <div class="list-title d-flex align-items-center">
+                فهرست مطالب
+                <i class="icon-angle-up"></i>
+              </div>
+              <ul>
+                <li>
+                  <a href="#list-1">
+                    <i class="icon-document"></i>
+                    اسم سر فصل مورد نظر شما در اینجا قرار میگرد
+                  </a>
+                </li>
+                <li>
+                  <a href="#list-2">
+                    <i class="icon-document"></i>
+                    اسم سر فصل مورد نظر شما در اینجا قرار میگرد
+                  </a>
+                </li>
+                <li>
+                  <a href="#list-3">
+                    <i class="icon-document"></i>
+                    اسم سر فصل مورد نظر شما در اینجا قرار میگرد
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <img src="./assets/images/article/article-11.png" alt="article" width="969" height="463">
+            <h3 id="list-1"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h3>
+            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.  </p>
+            <blockquote>
+              <h3 id="list-2"> لورم ایپسوم  ساختگی بَا تولید سادگی نامفهوم </h3>
+              <p> لورم ایپسوم مَتْنَ  ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+            </blockquote>
+            <h3 id="list-3"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </h3>
+            <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.  </p>
+          </div>
+          <!-- End Content -->
+          <!-- Start Author -->
+          <div class="detail-blog-author d-flex align-items-center flex-column flex-md-row text-center text-md-right">
+            <img src="./assets/images/avatar/avatar-03.png" alt="avatar" width="100" height="100">
+            <div>
+              <div class="name">
+                <a href="#" class=""> صمد سپهری </a>
+              </div>
+              <p> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی.  </p>
+            </div>
+          </div>
+          <!-- End Author -->
+          <!-- Start Related Articles -->
+          <div class="detail-blog-related-articles">
+            <div class="detail-blog-related-articles-title text-md-center">
+              <span> مطالب پیشنهادی </span>
+              سر دبیر
+            </div>
+            <!-- Start Articles -->
+            <div class="swiper swiper-related-articles overflow-visible">
+              <div class="swiper-wrapper">
+                <!-- Strat Article -->
+                <div class="swiper-slide">
+                  <article class="article-two">
+                    <figure>
+                      <a href="#" class="d-block">
+                        <img src="./assets/images/article/article-12.png" alt="article" width="300" height="188" class="d-block w-100">
+                      </a>
+                    </figure>
+                    <h2 class="title">
+                      <a href="#" class="d-block overflow-hidden"> عنوان مقاله در اینجا قرار میگرد </a>
+                    </h2>
+                    <div class="author-view d-flex align-items-center justify-content-between">
+                      <a href="#" class="author d-flex align-items-center">
+                        <img src="./assets/images/avatar/avatar-02.png" alt="avatar" width="25" height="25">
+                        <span class="overflow-hidden"> صمد سپهری </span>
+                      </a>
+                      <a href="#" class="view btn btn-secondary-2 d-flex align-items-center justify-content-center">
+                        مشاهده کردن
+                        <i class="icon-arrow-left-circle"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- End Article -->
+                <!-- Strat Article -->
+                <div class="swiper-slide">
+                  <article class="article-two">
+                    <figure>
+                      <a href="#" class="d-block">
+                        <img src="./assets/images/article/article-13.png" alt="article" width="300" height="188" class="d-block w-100">
+                      </a>
+                    </figure>
+                    <h2 class="title">
+                      <a href="#" class="d-block overflow-hidden"> عنوان مقاله در اینجا قرار میگرد </a>
+                    </h2>
+                    <div class="author-view d-flex align-items-center justify-content-between">
+                      <a href="#" class="author d-flex align-items-center">
+                        <img src="./assets/images/avatar/avatar-02.png" alt="avatar" width="25" height="25">
+                        <span class="overflow-hidden"> صمد سپهری </span>
+                      </a>
+                      <a href="#" class="view btn btn-secondary-2 d-flex align-items-center justify-content-center">
+                        مشاهده کردن
+                        <i class="icon-arrow-left-circle"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- End Article -->
+                <!-- Strat Article -->
+                <div class="swiper-slide">
+                  <article class="article-two">
+                    <figure>
+                      <a href="#" class="d-block">
+                        <img src="./assets/images/article/article-14.png" alt="article" width="300" height="188" class="d-block w-100">
+                      </a>
+                    </figure>
+                    <h2 class="title">
+                      <a href="#" class="d-block overflow-hidden"> عنوان مقاله در اینجا قرار میگرد </a>
+                    </h2>
+                    <div class="author-view d-flex align-items-center justify-content-between">
+                      <a href="#" class="author d-flex align-items-center">
+                        <img src="./assets/images/avatar/avatar-02.png" alt="avatar" width="25" height="25">
+                        <span class="overflow-hidden"> صمد سپهری </span>
+                      </a>
+                      <a href="#" class="view btn btn-secondary-2 d-flex align-items-center justify-content-center">
+                        مشاهده کردن
+                        <i class="icon-arrow-left-circle"></i>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+                <!-- End Article -->
+              </div>
+            </div>
+            <!-- End Articles -->
+          </div>
+          <!-- End Related Articles -->
+        </div>
+      </div>
+    </section>
+    <!-- End Detail Blog -->
+    <!-- Start Footer -->
+    <footer class="footer position-relative">
+      <div class="container">
+        <button type="button" class="btn-scroll footer-scroll position-absolute d-flex align-items-center justify-content-center" aria-label="scroll down">
+          <i class="icon-angle-up d-flex align-items-center justify-content-center position-relative"></i>
+        </button>
+        <div class="row">
+          <div class="col-lg-5">
+            <!-- Start Logo -->
+            <a href="#" class="footer-logo d-block position-relative">
+              <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+            </a>
+            <!-- End Logo -->
+            <!-- Start News Letter -->
+            <div class="footer-newsletter">
+              <div class="title d-flex align-items-center">
+                <i class="icon-angle-left"></i>
+                با ثبت ایمیل، از جدید‌ترین برنامه،اخبار،بلیط ها با‌خبر شوید
+              </div>
+              <form method="post" action="#" class="position-relative">
+                <input type="email" name="newsletter" class="form-control" placeholder="ایمیل">
+                <button type="submit" class="btn btn-secondary position-absolute"> عضویت </button>
+              </form>
+            </div>
+            <!-- End News Letter -->
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-3 order-1">
+                <div class="footer-title position-relative">
+                  <div>
+                    <span> دسترسی </span>
+                    سریع
+                  </div>
+                </div>
+                <ul class="footer-nav d-flex d-lg-block align-items-center">
+                  <li>
+                    <a href="#" class="d-block"> صفحه اصلی </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> ورود | ثبت نام </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> خدمات ما </a>
+                  </li>
+                  <li>
+                    <a href="#" class="d-block"> درباره ما </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-5 order-3 order-lg-2">
+                <div class="footer-title position-relative">
+                  <div>
+                    <span> ارتباط </span>
+                    با مهرداد گردی
+                  </div>
+                </div>
+                <ul class="footer-contact d-flex d-lg-block flex-wrap">
+                  <li class="d-flex">
+                    <span> آدرس: </span>
+                    <div>
+                      ایران، تهران، میدان آزادی، نرسیده به خیابان مفید
+                      به سمت بیمارستان آزادی
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <span> تلفن: </span>
+                    <div>
+                      0910<span>7321056</span>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <span> ایمیل: </span>
+                    <div> info@mehrdadgardi.com </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 order-2 order-lg-3 iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207344.50843900483!2d51.347655249999995!3d35.707573749999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e00491ff3dcd9%3A0xf0b3697c567024bc!2sTehran%2C%20Tehran%20Province!5e0!3m2!1sen!2s!4v1694241521261!5m2!1sen!2s"
+                  width="179" height="184" title="map tehran" class="w-100 d-block"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex align-items-lg-center justify-content-lg-between flex-column flex-lg-row">
+          <!-- Start Socials -->
+          <div class="footer-socials d-flex align-items-lg-center flex-column flex-lg-row">
+            <div class="position-relative">
+              <span> در شبکه‌های اجتماعی ما را دنبال کنید: </span>
+            </div>
+            <ul class="d-flex align-items-center">
+              <li>
+                <a href="#" class="d-block" aria-label="twitter">
+                  <i class="icon-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="linkedin">
+                  <i class="icon-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="facebook">
+                  <i class="icon-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="instagram">
+                  <i class="icon-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="d-block" aria-label="telegram">
+                  <i class="icon-telegram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Ene Socials -->
+          <div class="footer-copyright text-center text-lg-left"> تمامی حقوق مادی و معنوی برای سایت مهرداد گردی محفوظ می
+            باشد و کپی برداری از آن پیگرد قانونی خواهد داشت. </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </div>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

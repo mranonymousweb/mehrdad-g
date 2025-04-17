@@ -1,0 +1,28 @@
+.btn-scroll {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50%;
+  transform: translateX(-50%);
+
+  i {
+    width: 34.5px;
+    height: 34.5px;
+    border-radius: 50%;
+    background-color: #05195E;
+    color: #fff;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 42.5px;
+      height: 42.5px;
+      border-radius: 50%;
+      border: 2px solid #9DA5C4;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

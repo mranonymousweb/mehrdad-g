@@ -1,0 +1,47 @@
+.panel-edit-profile {
+  border-radius: 14px;
+  padding: 22px 26px 37px 25px;
+
+  &-heading {
+    padding-bottom: 14px;
+    margin-bottom: 37px;
+    border-bottom: 1px solid #F6F7F7;
+    
+    i {
+      font-size: 20px;
+      margin-left: 12px;
+      color: #70737D;
+    }
+  }
+
+  form {
+    .uploader {
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 6px;
+
+      textarea.form-control {
+        height: 143px;
+      }
+
+      .length-word {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 19px;
+        color: #70737D;
+        left: 15px;
+        bottom: 16px;
+      }
+    }
+
+    .btn {
+      margin-top: 19px;
+    }
+  }
+
+  @include xs {
+    padding: 20px 12px 30px;
+  }
+}

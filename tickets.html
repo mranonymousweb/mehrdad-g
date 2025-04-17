@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="مهرداد گردی">
+  <title> مهرداد گردی | تیکیت ها </title>
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/css/nice-select2.css">
+  <link rel="stylesheet" href="./assets/css/main.min.css">
+</head>
+
+<body>
+  <div class="app">
+    <!-- Start Panel -->
+    <div class="panel overflow-hidden position-relative">
+      <!-- Start Sidebar -->
+      <aside class="panel-sidebar w-100">
+        <div class="panel-sidebar-backdrop d-xl-none"></div>
+        <div class="panel-sidebar-content w-100 position-absolute">
+          <!-- Start Logo -->
+          <a href="#" class="panel-sidebar-logo d-none d-xl-block">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <!-- Start Info User -->
+          <div class="panel-sidebar-info-user d-flex align-items-center position-relative d-xl-none">
+            <a href="#" class="link-fixed" aria-label="name link"></a>
+            <img src="./assets/images/avatar/avatar-04.png" alt="avatar" width="47" height="47">
+            <div>
+              <div class="name"> صمد سپهری </div>
+              <div class="wellcome"> خوش آمدید </div>
+            </div>
+          </div>
+          <!-- End Info User -->
+          <button type="button"
+            class="panel-sidebar-close position-absolute d-flex align-items-center justify-content-center d-xl-none">
+            <i class="icon-close"></i>
+          </button>
+          <!-- Start Menu -->
+          <ul class="panel-sidebar-menu">
+            <li>
+              <a href="#" class="active d-flex align-items-center position-relative">
+                <i class="icon-grid-2"></i>
+                داشبرد
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex align-items-center position-relative">
+                <i class="icon-user"></i>
+                پروفایل
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex align-items-center position-relative">
+                <i class="icon-ticket"></i>
+                سفارش ها
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex align-items-center position-relative">
+                <i class="icon-chat"></i>
+                پیام ها
+              </a>
+            </li>
+            <li>
+              <a href="#" class="d-flex align-items-center position-relative">
+                <i class="icon-login"></i>
+                خروج
+              </a>
+            </li>
+          </ul>
+          <!-- End Menu -->
+        </div>
+      </aside>
+      <!-- End Sidebar -->
+      <!-- Start Header -->
+      <header class="panel-header d-none d-xl-flex align-items-xl-center">
+        <!-- Start Info User -->
+        <div class="panel-header-info-user d-flex align-items-center">
+          <img src="./assets/images/avatar/avatar-04.png" alt="avatar" width="47" height="47">
+          <div>
+            <div class="name"> صمد سپهری </div>
+            <div class="wellcome"> خوش آمدید </div>
+          </div>
+        </div>
+        <!-- End Info User -->
+        <!-- Start Search -->
+        <form method="post" action="#" class="panel-header-search position-relative w-100">
+          <i class="icon-search position-absolute"></i>
+          <input type="text" name="search" class="form-control" placeholder="دنبال چه چیزی میگردی؟">
+          <button type="submit" class="btn btn-secondary-5 position-absolute"> جستجو </button>
+        </form>
+        <!-- End Search -->
+        <!-- Start Notification -->
+        <a href="#"
+          class="panel-header-notification d-flex align-items-center justify-content-center position-relative">
+          <i class="icon-notification"></i>
+          <span class="position-absolute d-flex align-items-center justify-content-center"> 01 </span>
+        </a>
+        <!-- End Notification -->
+      </header>
+      <!-- End Header -->
+      <!-- Start Header Mobile -->
+      <header class="panel-header-mobile d-xl-none">
+        <div class="d-flex align-items-center">
+          <button type="button"
+            class="top-header-btn-nav panel-header-mobile-btn-nav d-flex align-items-center justify-content-center"
+            aria-label="btn nav">
+            <i class="icon-menu"></i>
+          </button>
+          <!-- Start Logo -->
+          <a href="./index.html" class="top-header-logo">
+            <img src="./assets/images/logo/logo.png" alt="logo" width="188" height="40">
+          </a>
+          <!-- End Logo -->
+          <!-- Start Contact -->
+          <div class="panel-header-mobile-contact d-flex align-items-center justify-content-center">
+            <img src="./assets/images/icon/phone-01.svg" alt="phone" width="24" height="24">
+          </div>
+          <!-- End Contact -->
+          <a href="./auth.html"
+            class="panel-header-mobile-auth btn btn-danger d-flex align-items-end justify-content-center" aria-label="auth">
+            <i class="icon-user-2"></i>
+          </a>
+        </div>
+        <form method="get" action="#" class="search-mobile position-relative">
+          <input type="text" name="search" class="form-control" placeholder="دنبال چه چیزی هستین؟">
+          <button type="submit" class="position-absolute" aria-label="search">
+            <i class="icon-search"></i>
+          </button>
+        </form>
+      </header>
+      <!-- End Header Mobile -->
+      <!-- Start Content -->
+      <div class="panel-content">
+        <div class="panel-tickets panel-box">
+          <!-- Start Heading -->
+          <div
+            class="panel-tickets-heading d-flex align-items-lg-center justify-content-lg-between flex-column flex-lg-row">
+            <form method="get" action="#" class="d-flex align-items-center flex-wrap flex-md-nowrap">
+              <div class="form-group position-relative search">
+                <input type="text" name="search" class="form-control" placeholder="جستجو">
+                <button type="submit" class="position-absolute" aria-label="search">
+                  <i class="icon-search-2"></i>
+                </button>
+              </div>
+              <div class="form-group">
+                <select name="status" class="form-control select-two">
+                  <option value=""> وضعیت </option>
+                  <option value="1"> در انتظار پاسخ </option>
+                  <option value="2"> در حال برسی </option>
+                  <option value="3"> ارجاع داده شده </option>
+                  <option value="4"> بسته شده </option>
+                </select>
+              </div>
+              <div class="form-group position-relative view">
+                <span class="position-absolute"> نمایش </span>
+                <select name="view" class="form-control select-two">
+                  <option value="10"> 10 </option>
+                  <option value="20"> 20 </option>
+                  <option value="30"> 30 </option>
+                </select>
+              </div>
+            </form>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-send-ticket"> ارسال
+              پیام جدید </button>
+          </div>
+          <!-- End Heading -->
+          <!-- Start Body -->
+          <div class="panel-tickets-body">
+            <!-- Start Tickets -->
+            <ul class="panel-tickets-items">
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-warning"> در انتظار پاسخ </span>
+              </li>
+              <!-- End Ticket -->
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-info"> در حال برسی </span>
+              </li>
+              <!-- End Ticket -->
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-warning"> در انتظار پاسخ </span>
+              </li>
+              <!-- End Ticket -->
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-secondary"> ارجاع داده شده </span>
+              </li>
+              <!-- End Ticket -->
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-warning"> در انتظار پاسخ </span>
+              </li>
+              <!-- End Ticket -->
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-danger"> بسته شده </span>
+              </li>
+              <!-- End Ticket -->
+              <!-- Start Ticket -->
+              <li class="panel-tickets-item d-flex align-items-center position-relative flex-wrap flex-lg-nowrap">
+                <a href="#" class="link-fixed" aria-label="name link"></a>
+                <i class="icon-email-2 d-flex align-items-center justify-content-center position-relative"></i>
+                <div class="title"> موضوع ارسالی کاربر اینجا قرار میگرد </div>
+                <ul class="d-flex align-items-center">
+                  <li class="d-none d-md-block">
+                    برسی توسط:
+                    <span> صمد سپهری </span>
+                  </li>
+                  <li class="d-none d-md-block">
+                    تاریخ ایجاد:
+                    <span> 1400-05-18 </span>
+                  </li>
+                  <li>
+                    تاریخ بروز رسانی:
+                    <span> 1400-05-18 </span>
+                  </li>
+                </ul>
+                <span class="badge badge-warning"> در انتظار پاسخ </span>
+              </li>
+              <!-- End Ticket -->
+            </ul>
+            <!-- End Tickets -->
+            <!-- Start Pagination -->
+            <div class="pagination d-flex align-items-center flex-wrap justify-content-center justify-content-lg-start">
+              <a href="#" class="pagination-next d-flex align-items-center justify-content-center">
+                <i class="icon-angle-right"></i>
+              </a>
+              <ul class="d-flex align-items-center flex-wrap">
+                <li>
+                  <a href="#" class="active d-flex align-items-center justify-content-center"> 1 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 2 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 3 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 4 </a>
+                </li>
+                <li>
+                  <a href="#" class="d-flex align-items-center justify-content-center"> 5 </a>
+                </li>
+              </ul>
+              <a href="#" class="pagination-prev d-flex align-items-center justify-content-center">
+                <i class="icon-angle-left"></i>
+              </a>
+              <div class="pagination-count-page d-flex align-items-center">
+                تعداد صفخات
+                <a href="#" class="d-flex align-items-center justify-content-center"> 11 </a>
+              </div>
+            </div>
+            <!-- End Pagination -->
+          </div>
+          <!-- End Body -->
+        </div>
+      </div>
+      <!-- End Content -->
+    </div>
+    <!-- End Panel -->
+    <!-- Start Modal Send Ticket -->
+    <div id="modal-send-ticket" class="modal modal-send-ticket">
+      <div class="modal-dialog d-flex align-items-center justify-content-center">
+        <div class="modal-content">
+          <div class="modal-heading">
+            <div class="modal-title"> ارسال پیام جدید </div>
+            <div class="sub-title"> اگر سوال و پشتیبانی نیاز دارین فقط کافیه فرم زیر را تکمیل کنید </div>
+            <button type="button" class="modal-close d-flex align-items-center justify-content-center position-absolute">
+              <i class="icon-close"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="post" action="#">
+              <div class="form-group">
+                <label for="subject" class="d-inline-block">
+                  <span class="d-inline-block"> * </span>
+                  موضوع پیام
+                </label>
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="موضوع پیام را اینجا وارد کنید">
+              </div>
+              <div class="form-group">
+                <label for="part" class="d-inline-block"> مربوط به بخش </label>
+                <select name="part" id="part" class="form-control select-two">
+                  <option value="1"> امور مالی </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="content" class="d-inline-block"> موضوع پیام </label>
+                <textarea name="content" class="form-control" id="content" placeholder="پیام شما"></textarea>
+              </div>
+              <div class="form-group">
+                <label class="d-inline-block"> انتخاب فایل </label>
+                <div class="d-flex align-items-center">
+                  <div class="files">
+                    <div class="uploader-file">
+                      <input type="file" name="file[]" id="file-1" class="uploader-file-input" hidden>
+                      <label for="file-1" class="uploader-file-label position-relative d-flex align-items-center w-100"> فایلی انتخاب نشده است
+                      </label>
+                    </div>
+                  </div>
+                  <button type="button" class="btn-new-file btn btn-secondary-2"> فایل جدید </button>
+                </div>
+              </div>
+              <button type="submit" class="btn-send-ticket btn btn-danger w-100 d-block text-center"> ارسال پیام </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Send Ticket -->
+  </div>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/nice-select2.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
