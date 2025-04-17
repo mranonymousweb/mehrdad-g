@@ -427,7 +427,7 @@
               <img src="assets/زیبا کننده.svg" width="46px" height="22.03px" alt="">
             </div>
             <div class="ctnt">
-              <h3>بلیط های <span style="color: #D10101;">ترکیه</span></h3>
+              <h3>بلیط های <span style="color: #D10101;"><a href="#">ترکیه</a></span></h3>
             </div>
             <div class="flh">
               <img src="assets/آیکن جهت زیبا کننده.svg" alt="">
@@ -787,7 +787,7 @@
               <img src="assets/زیبا کننده.svg" width="46px" height="22.03px" alt="">
             </div>
             <div class="ctnt">
-              <h3>تور های <span style="color: #2CA9BC;">ترکیه</span></h3>
+              <h3>تور های <span style="color: #2CA9BC;"><a href="#">ترکیه</a></span></h3>
             </div>
             <div class="flh">
               <img src="assets/آیکن جهت زیبا کننده.svg" alt="">
@@ -1076,11 +1076,11 @@
       <div class="container">
         <button type="button"
           class="btn-scroll position-absolute d-none d-md-flex align-items-center justify-content-center"
-          data-scroll=".items-tour" aria-label="scroll down" style="margin-top: -45px;">
+          data-scroll=".items-tour2" aria-label="scroll down" style="margin-top: -45px;">
           <i class="icon-angle-down d-flex align-items-center justify-content-center position-relative"
             style="background: linear-gradient(117deg,rgba(62, 168, 116, 1) 0%, rgba(5, 130, 57, 1) 100%);"></i>
         </button>
-        <div class="row items-tour justify-content-lg-center fffm">
+        <div class="row items-tour2 justify-content-lg-center fffm">
           <!-- Start Tour -->
           <div class="col cpm">
             <div class="position-relative text-center">
@@ -1249,61 +1249,6 @@
         })();
       </script>
 
-      <!-- <style>
-        /* استایل‌های ضروری برای کروسل و درگ (فرض می‌کنم استایل‌های اصلی تو از قبل داری) */
-        .pomen.category-tours {
-          display: flex;
-          overflow-x: hidden;
-          scroll-behavior: smooth;
-          position: relative;
-          padding: 10px 0;
-          cursor: grab;
-          user-select: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
-          
-        }
-    
-        .pomen.category-tours.dragging {
-          cursor: grabbing;
-          scroll-behavior: auto;
-        }
-    
-        
-    
-        
-    
-        .left-ccbtn {
-          right: 100px;
-        }
-    
-        .right-ccbtn {
-          left: -20px;
-        }
-    
-        
-        .arrowfl img {
-          width: 20px;
-          height: 20px;
-        }
-    
-        @media (max-width: 768px) {
-          
-    
-          .left-ccbtn, .right-ccbtn {
-            width: 36px;
-            height: 36px;
-          }
-    
-          .left-ccbtn {
-            right: 5px;
-          }
-    
-          .right-ccbtn {
-            left: 5px;
-          }
-        }
-      </style> -->
       <div class="hero_post_sect">
         <div class="section_posts">
           <div class="titlebar">
@@ -1311,7 +1256,7 @@
               <img src="assets/زیبا کننده.svg" width="46px" height="22.03px" alt="">
             </div>
             <div class="ctnt">
-              <h3>بلیط های <span style="color: #18CF64;">امارات</span></h3>
+              <h3>بلیط های <span style="color: #18CF64;"><a href="#">امارات</a></span></h3>
             </div>
             <div class="flh">
               <img src="assets/آیکن جهت زیبا کننده.svg" alt="">
@@ -1622,106 +1567,6 @@
         </div>
       </div>
 
-      <!-- <script>
-        (function () {
-          const carousel = document.getElementById('carousel');
-          const leftBtn = document.querySelector('.left-ccbtn');
-          const rightBtn = document.querySelector('.right-ccbtn');
-    
-          // مدیریت درگ با موس
-          let isDragging = false;
-          let startX = 0;
-          let scrollLeft = 0;
-          let velocity = 0;
-          let lastX = 0;
-          let animationFrame;
-    
-          const startDragging = (e) => {
-            isDragging = true;
-            carousel.classList.add('dragging');
-            startX = e.pageX - carousel.offsetLeft;
-            scrollLeft = carousel.scrollLeft;
-            lastX = startX;
-            velocity = 0;
-            cancelAnimationFrame(animationFrame);
-          };
-    
-          const stopDragging = () => {
-            if (!isDragging) return;
-            isDragging = false;
-            carousel.classList.remove('dragging');
-    
-            // اضافه کردن اینرسی (momentum) برای اسکرول روان
-            if (Math.abs(velocity) > 0.1) {
-              const momentumScroll = () => {
-                carousel.scrollLeft += velocity;
-                velocity *= 0.95; // کاهش سرعت
-                if (Math.abs(velocity) > 0.1) {
-                  animationFrame = requestAnimationFrame(momentumScroll);
-                }
-              };
-              animationFrame = requestAnimationFrame(momentumScroll);
-            }
-          };
-    
-          const drag = (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-            const x = e.pageX - carousel.offsetLeft;
-            const walk = (x - startX) * 1.5; // سرعت اسکرول
-            carousel.scrollLeft = scrollLeft - walk;
-    
-            // محاسبه سرعت برای اینرسی
-            velocity = (x - lastX) * 0.1;
-            lastX = x;
-          };
-    
-          carousel.addEventListener('mousedown', startDragging);
-          carousel.addEventListener('mousemove', drag);
-          carousel.addEventListener('mouseup', stopDragging);
-          carousel.addEventListener('mouseleave', stopDragging);
-    
-          // پشتیبانی از تاچ برای موبایل
-          carousel.addEventListener('touchstart', (e) => {
-            const touch = e.touches[0];
-            startDragging({ pageX: touch.pageX });
-          });
-    
-          carousel.addEventListener('touchmove', (e) => {
-            const touch = e.touches[0];
-            drag({ pageX: touch.pageX, preventDefault: () => e.preventDefault() });
-          });
-    
-          carousel.addEventListener('touchend', stopDragging);
-    
-          // به‌روزرسانی وضعیت دکمه‌ها
-          const updateButtons = () => {
-            leftBtn.classList.toggle('disabled', carousel.scrollLeft <= 0);
-            rightBtn.classList.toggle('disabled', carousel.scrollLeft >= carousel.scrollWidth - carousel.clientWidth - 1);
-          };
-    
-          // اسلاید با دکمه‌ها
-          window.scrollCarousel = (direction) => {
-            const scrollAmount = 289; // عرض col-3 (269px) + فاصله (20px)
-            const currentScroll = carousel.scrollLeft;
-    
-            carousel.scrollTo({
-              left: direction === 'left' ? currentScroll - scrollAmount : currentScroll + scrollAmount,
-              behavior: 'smooth'
-            });
-          };
-    
-          // به‌روزرسانی دکمه‌ها هنگام اسکرول و لود
-          carousel.addEventListener('scroll', updateButtons, { passive: true });
-          window.addEventListener('load', updateButtons);
-    
-          // جلوگیری از پرش‌های ناخواسته
-          carousel.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            carousel.scrollLeft += e.deltaY * 2;
-          }, { passive: false });
-        })();
-      </script> -->
       <div class="hero_post_sect">
         <div class="section_posts">
           <div class="titlebar">
@@ -1729,7 +1574,7 @@
               <img src="assets/زیبا کننده.svg" width="46px" height="22.03px" alt="">
             </div>
             <div class="ctnt">
-              <h3>تور های <span style="color: #2CA9BC;">امارات</span></h3>
+              <h3>تور های <span style="color: #2CA9BC;"><a href="#">امارات</a></span></h3>
             </div>
             <div class="flh">
               <img src="assets/آیکن جهت زیبا کننده.svg" alt="">
@@ -1975,11 +1820,11 @@
       <div class="container">
         <button type="button"
           class="btn-scroll position-absolute d-none d-md-flex align-items-center justify-content-center"
-          data-scroll=".items-tour" aria-label="scroll down" style="margin-top: -45px;">
+          data-scroll=".items-tour3" aria-label="scroll down" style="margin-top: -45px;">
           <i class="icon-angle-down d-flex align-items-center justify-content-center position-relative"
             style="background: linear-gradient(117deg,rgba(207, 135, 38, 1) 0%, rgba(141, 88, 18, 1) 100%);"></i>
         </button>
-        <div class="row items-tour justify-content-lg-center fffm">
+        <div class="row items-tour3 justify-content-lg-center fffm">
           <!-- Start Tour -->
           <div class="col cpm">
             <div class="position-relative text-center">
@@ -2034,7 +1879,7 @@
               <img src="assets/زیبا کننده.svg" width="46px" height="22.03px" alt="">
             </div>
             <div class="ctnt">
-              <h3>بلیط های <span style="color: #CF8726;">قبرس شمالی</span></h3>
+              <h3>بلیط های <span style="color: #CF8726;"><a href="#">قبرس شمالی</a></span></h3>
             </div>
             <div class="flh">
               <img src="assets/آیکن جهت زیبا کننده.svg" alt="">
@@ -2303,7 +2148,7 @@
               <img src="assets/زیبا کننده.svg" width="46px" height="22.03px" alt="">
             </div>
             <div class="ctnt">
-              <h3>تور های <span style="color: #2CA9BC;">قبرس</span></h3>
+              <h3>تور های <span style="color: #2CA9BC;"><a href="#">قبرس</a></span></h3>
             </div>
             <div class="flh">
               <img src="assets/آیکن جهت زیبا کننده.svg" alt="">
