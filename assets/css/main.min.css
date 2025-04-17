@@ -6587,11 +6587,10 @@ label {
   }
 }/*# sourceMappingURL=main.min.css.map */
 
-.crdss{
+.crdss {
   display: flex;
-  flex-wrap: nowrap;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  flex-wrap: nowrap; /* کارت‌ها همیشه کنار هم می‌مانند */
+  padding: 3rem 1rem;
   gap: 1rem;
   text-align: center;
   align-items: center;
@@ -6599,50 +6598,54 @@ label {
 }
 
 .crd {
-  width: 382.19px;
-  height: 137.51px;
+  width: min(100%, 382.19px); /* عرض مقیاس‌پذیر */
+  height: auto;
+  min-height: 137.51px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 10px;
-  padding-right: 35px;
+  padding: 1rem 2rem 1rem 35px;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  flex-shrink: 0; /* جلوگیری از کوچک شدن کارت‌ها */
 }
 
 .crd h2 {
-  font-size: 25px;
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
   font-weight: 400;
   margin-left: auto;
-  color: #FFFFFF;
-  margin-bottom: 3px;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
 }
 
 .crd p {
-  font-size: 12px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
+  font-size: clamp(0.7rem, 3vw, 0.75rem);
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
-.bmt{
+.bmt {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 15px;
+  margin-top: 0.75rem;
+  gap: 0.25rem;
 }
 
 .btnc {
   background-color: #fff;
   border-radius: 15px;
-  padding: 0px 8px;
-  padding-bottom: 20px !important;
+  padding: 0.3rem 0.5rem;
   cursor: pointer;
-  font-size: 10px;
+  font-size: clamp(0.5rem, 2.5vw, 0.625rem);
   color: #333;
-  width: 76px;
+  width: min(76px, 20vw);
   height: 20px;
-  margin-right: 4px;
+  margin-right: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fcccy {
@@ -6651,23 +6654,87 @@ label {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 100; /* برای اطمینان از اینکه پرچم روی لایه‌های دیگر قرار گیرد */
+  z-index: 100;
 }
 
-/* پرچم‌ها به صورت دایره‌ای */
 .flag {
-  width: 87px;
-  height: 94px;
+  width: min(87px, 20vw);
+  height: min(94px, 22vw);
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: clamp(1rem, 5vw, 1.5rem);
+  left: clamp(1rem, 5vw, 1.5rem);
 }
 
 .arrow {
-  font-size: 14px;
+  font-size: clamp(0.7rem, 3vw, 0.875rem);
   color: #333;
   font-weight: bold;
-  margin-right: 10px;
+  margin-right: 0.5rem;
+}
+
+/* Media Queries برای صفحه‌های کوچک‌تر */
+@media (max-width: 768px) {
+  .crdss {
+    padding: 2rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .crd {
+    width: min(350px, 90vw); /* عرض کوچکتر برای تبلت */
+    padding: 0.8rem 1.5rem 0.8rem 30px;
+    min-height: 120px;
+  }
+
+  .flag {
+    width: 60px;
+    height: 65px;
+    top: 0.8rem;
+    left: 0.8rem;
+  }
+
+  .btnc {
+    width: 60px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .crdss {
+    padding: 1.5rem 0.3rem;
+    gap: 0.3rem;
+  }
+
+  .crd {
+    width: min(200px, 80vw); /* عرض کوچکتر برای موبایل */
+    padding: 0.6rem 1rem 0.6rem 25px;
+    min-height: 100px;
+  }
+
+  .crd h2 {
+    font-size: 1rem;
+  }
+
+  .crd p {
+    font-size: 0.6rem;
+  }
+
+  .flag {
+    width: 50px;
+    height: 55px;
+    top: 0.6rem;
+    left: 0.6rem;
+  }
+
+  .btnc {
+    width: 50px;
+    height: 16px;
+    font-size: 0.5rem;
+    padding: 0.2rem 0.3rem;
+  }
+
+  .arrow {
+    font-size: 0.6rem;
+  }
 }
 
 .hero_post_sect{
@@ -6799,3 +6866,202 @@ label {
   display: flex;
   transition: transform 0.5s ease;
 }
+
+
+/* فرض می‌کنیم col-3 بخشی از بوت‌استرپ است */
+.row {
+  display: flex;
+  flex-wrap: nowrap; /* کارت‌ها کنار هم می‌مانند */
+  overflow-x: auto; /* اسکرول افقی در صفحه‌های کوچک */
+  gap: 1rem; /* فاصله بین کارت‌ها */
+  padding: 1rem;
+  white-space: nowrap; /* جلوگیری از شکستن خط */
+}
+
+.col-3 {
+  flex: 0 0 auto; /* عرض ثابت برای هر کارت */
+  width: min(369px, 80vw); /* عرض مقیاس‌پذیر */
+  max-width: 100%;
+}
+
+
+
+
+
+/* Media Queries برای صفحه‌های کوچک‌تر */
+@media (max-width: 768px) {
+  .col-3 {
+    width: min(320px, 75vw); /* عرض کوچکتر برای تبلت */
+  }
+
+  .tour-item {
+    padding: 0.8rem;
+  }
+
+  .image img {
+    max-height: 180px;
+  }
+
+  .location2221,
+  .istmconc p {
+    padding: 0.2rem 0.6rem;
+  }
+
+  .title a {
+    font-size: 1rem;
+  }
+
+  ul {
+    font-size: 0.7rem;
+  }
+
+  .price,
+  .btn-secondary-3 {
+    font-size: 0.75rem;
+  }
+  .tour-item .image img{
+    position: relative;
+    width: 100%;
+    height: 260px; /* ارتفاع ثابت برای تصویر */
+    overflow: hidden; /* جلوگیری از سرریز */
+  }
+  .location2221,
+  .istmconc p {
+    padding: 0.0rem 0rem;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  
+  .tour-item {
+    padding: 0.6rem;
+  }
+  .tour-item .image{
+    background: red;
+  }
+
+  .image img {
+    max-height: 140px;
+  }
+
+  .location2221 {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .istmconc p {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  .title a {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    font-size: 0.65rem;
+  }
+
+  .price,
+  .btn-secondary-3 {
+    font-size: 0.7rem;
+  }
+
+  .btn-secondary-3 {
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .fffm{
+    transform: translateX(100px);
+    width: 750px;
+  }
+
+  .items-tour {
+    height: 220px; /* ارتفاع کوچکتر */
+  }
+  .cpm{
+    margin-right: 80px;
+    width: 100%;
+  }
+  .pom{
+    margin-right: 20px;
+  }
+  .flag {
+    width: 50px;
+    height: 38px;
+    top: 0.4rem;
+    left: 0.4rem;
+  }
+
+  .image img {
+    width: min(110px, 30vw);
+    max-height: 110px;
+  }
+
+  .title.pom {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .col {
+    width: min(120px, 40vw); /* عرض کوچکتر برای موبایل */
+  }
+
+  .tour-box {
+    height: 120px; /* ارتفاع کوچکتر */
+  }
+
+  .flag {
+    width: 40px;
+    height: 30px;
+    top: 0.3rem;
+    left: 0.3rem;
+  }
+
+  .image img {
+    width: min(80px, 25vw);
+    max-height: 80px;
+  }
+
+  .title.pom {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+/* استایل کلی بخش */
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -50px;
+}
+
+
+/* چیدمان کارت‌ها */
+.pomen.category-tours {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 1440px;
+}
+
