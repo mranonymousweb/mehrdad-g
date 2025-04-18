@@ -7017,19 +7017,24 @@ label {
     margin-right: 80px;
     width: 100%;
   }
+  .imppm{
+    transform: translateY(-30px);
+  }
+
   .pom{
     margin-right: 20px;
   }
   .flag {
     width: 50px;
     height: 38px;
-    top: 0.4rem;
+    top: 0.0rem;
     left: 0.4rem;
   }
 
   .image img {
     width: min(110px, 30vw);
     max-height: 110px;
+    transform: translateY(-30px);
   }
 
   .title.pom {
@@ -7054,7 +7059,7 @@ label {
   .flag {
     width: 40px;
     height: 30px;
-    top: 0.3rem;
+    top: 0.0rem;
     left: 0.3rem;
   }
 
@@ -7117,3 +7122,4 @@ label {
     right: 5px;  /* فاصله از سمت راست در موبایل */
   }
 }
+
